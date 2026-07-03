@@ -4,7 +4,7 @@ Files
 chatbot.jsx — the entire app (UI + API calls) in one component.
 How it works
 Messages are kept in React state (useState), one array of { role, text } objects.
-On send, the full conversation history is POSTed to https://api.anthropic.com/v1/messages using the claude-sonnet-4-6 model.
+On send, the full conversation history is POSTed to using the claude-sonnet-4-6 model.
 The model's reply is appended to the message list and rendered.
 A "writing…" indicator shows while waiting on a response.
 Controls
